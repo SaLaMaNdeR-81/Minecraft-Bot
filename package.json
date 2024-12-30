@@ -1,0 +1,24 @@
+{
+  "name": "mcbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "Oldstart": "tsc && node --no-deprecation ./dist/index.js",
+    "Start:Ts": "tsc -w",
+    "Start:Js": "nodemon ./dist/index.js",
+    "Start": "concurrently npm:Start:*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "concurrently": "^9.1.1",
+    "mineflayer": "^4.23.0",
+    "mineflayer-pathfinder": "^2.4.5",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemon": "^3.1.9",
+    "prismarine-viewer": "^1.28.0"
+  }
+}
